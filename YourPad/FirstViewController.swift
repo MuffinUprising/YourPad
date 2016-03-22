@@ -32,8 +32,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         super.viewDidLoad()
         self.soundBankPickerView.delegate = self
         self.soundBankPickerView.dataSource = self
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,7 +69,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // ** Hi Hat Button **
     @IBAction func hiHatTouchDown(sender: UIButton) {
         hiHatButton.setImage(UIImage(named: "hiHat_on.png"), forState: UIControlState.Normal)
-        
     }
     
     @IBAction func hiHatTouchUp(sender: UIButton) {
@@ -82,7 +79,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     //** Crash Button **
     @IBAction func crashTouchDown(sender: UIButton) {
         crashButton.setImage(UIImage(named: "crash_on.png"), forState: UIControlState.Normal)
-        
     }
     
     @IBAction func crashTouchUp(sender: UIButton) {
@@ -93,7 +89,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // ** Ride Button **
     @IBAction func rideTouchDown(sender: UIButton) {
         rideButton.setImage(UIImage(named: "ride_on.png"), forState: UIControlState.Normal)
-        
     }
     
     @IBAction func rideTouchUp(sender: UIButton) {
@@ -104,7 +99,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // ** Snare Button **
     @IBAction func snareTouchDown(sender: UIButton) {
         snareButton.setImage(UIImage(named: "snare_on.png"), forState: UIControlState.Normal)
-        
     }
     
     @IBAction func snareTouchUp(sender: UIButton) {
@@ -115,7 +109,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // ** Kick Button **
     @IBAction func kickTouchDown(sender: UIButton) {
         kickButton.setImage(UIImage(named: "kick_on.png"), forState: UIControlState.Normal)
-       
     }
     
     @IBAction func kickTouchUp(sender: UIButton) {
@@ -126,7 +119,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // ** Rack Tom Button **
     @IBAction func rackTomTouchDown(sender: UIButton) {
         rackTomButton.setImage(UIImage(named: "rackTom_on.png"), forState: UIControlState.Normal)
-        
     }
     
     @IBAction func rackTomTouchUp(sender: UIButton) {
@@ -137,7 +129,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // ** Floor Tom Button **
     @IBAction func floorTomTouchDown(sender: UIButton) {
         floorTomButton.setImage(UIImage(named: "floorTom_on.png"), forState: UIControlState.Normal)
-        
     }
     
     @IBAction func floorTomTouchUp(sender: UIButton) {
@@ -161,7 +152,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         currentBank = soundBanks[row]
-        
     }
 
 }
